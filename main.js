@@ -86,6 +86,13 @@ function createTray() {
             }
         },
         {
+            label: 'Mesajlar',
+            click: () => {
+                mainWindow.loadURL(DEFAULT_URL + '/DirectMessaging');
+                mainWindow.show();
+            }
+        },
+        {
             label: 'Yenile',
             click: () => {
                 mainWindow.webContents.reload();
